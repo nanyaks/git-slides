@@ -1,380 +1,378 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<title>Getting With Git - GDG Event</title>
-		<meta name="description" content="Google developer group Lagos git source version control event held at the CCHub Lagos.">
-		<meta name="author" content="Nanyak Loknan S.">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <title>Getting With Git - GDG Event</title>
+        <meta name="description" content="Google developer group Lagos git source version control event held at the CCHub Lagos.">
+        <meta name="author" content="Nanyak Loknan S.">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		
-		<!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.min.css">
 
-		<!-- <link rel="stylesheet" href="css/theme/simple.css" id="theme"> -->
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
 
-		<link rel="stylesheet" href="css/custom.css">
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <script>
+document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
 
-	<body>
+        <link rel="stylesheet" href="css/custom.css">
+        <!--[if lt IE 9]>
+            <script src="lib/js/html5shiv.js"></script>
+            <![endif]-->
+    </head>
 
-		<div class="reveal">
+    <body>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1 id="what_is_aws">GDG LAGOS</h1>
-					<h3>Getting Deep with Git</h3>
-				</section>
+        <div class="reveal">
 
-				<section>
-					<div>
-						<div class="subnotes">Nanyak Loknan S.</div>
-						<br />
-						<small><a href="http://twitter.com/nanyaks">@nanyaks</a></small>
-					</div>
-				</section> <!-- intro name -->
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1 id="what_is_aws">GDG LAGOS</h1>
+                    <h3>Getting Deep with Git</h3>
+                </section>
 
-				<section>
-					<img src="./img/logo.png" class="logo-main" alt="git logo" />
-				</section>
+                <section>
+                    <div>
+                        <div class="subnotes">Nanyak Loknan S.</div>
+                        <br />
+                        <small><a href="http://twitter.com/nanyaks">@nanyaks</a></small>
+                    </div>
+                </section> <!-- intro name -->
 
-				<section>
-					<div>
-						What is Git and why all the <strong>'hype'</strong>?
-					</div>
-					<br />
-					<small class="subnotes">Feel free to ask your questions!</small>
-				</section>
+                <section>
+                    <img src="./img/logo.png" class="no-border logo-main" alt="git logo" />
+                </section>
 
-				<section>
-					<h2>A bit of a background</h2>
-					<br />
-					<div>
-						Git was created in 2007 by Linus Torvalds ...
-					</div>
+                <section>
+                    <div>
+                        What is Git and why all the <strong>'hype'</strong>?
+                    </div>
+                    <br />
+                    <small class="subnotes">Feel free to ask your questions!</small>
+                </section>
 
-				</section>
+                <section>
+                    <h2>A bit of a background</h2>
+                    <br />
+                    <div>
+                        Git was created in 2007 by Linus Torvalds ...
+                    </div>
 
-				<section>
-					<h2>A bit of a background</h2>
-					<br />
-					<div>
-						I said <strong>'a bit'</strong> ...
-					</div>
-					<br />
-					<small>see <a href="http://en.wikipedia.org/wiki/Git_(software)">wikipedia</a></small>
-				</section>
-				
-				<section>
-					<h2>What is Git?</h2>
-					<div>
-						Simply put, git is a source code management system.
-					</div>
-					<div class="subnotes">
-						<strong>Source control / Version control</strong> is the management of changes to documents, computer programs  and other collections of information
-					</div>
-					<small>see <a href="http://en.wikipedia.org/wiki/Revision_control">wikipedia</a> article for more!</small>
-				</section>
+                </section>
 
-				<section>
-					<section>
-						<h2>What Git is not!</h2>
-						<div>
-							<img src="./img/octocat2.png" alt="" />
-						</div>
-						<div><a href="http://github.com/">Github</a></div>
-					</section>
-					<section>
-						<h2>Neither is it...</h2>
-						<div>
-							<img src="./img/bitbucket.png" alt="" />
-						</div>
-						<div><a href="http://bitbucket.org/">Bitbucket</a></div>
-					</section>
-				</section>
-				<section>
-					<section><h2 class="">Why should I care?</h2></section>
-					<section>
-						<div class="point">Git makes your life easier</div>
-						<div id="name" class=" subnotes">
-						   Yes, it does!
-						</div>
-					</section>
-					<section>
-						<div id="point" class="point">
-							Has this ever happened to you?
-						</div>
-						<div id="j" class="subnotes">
-								<img src="./img/code-lost-tlk.png" alt=""/>
-						</div>
-					</section>
-					<section>
-						<div id="point" class="point">
-							Now you don't need to worry about it!
-						</div>
-						<div id="j" class="subnotes">
-								<img src="./img/man-git2.png" alt=""/>
-						</div>
-					</section>
-					<section>
-						<div class="subnotes">That in itself is a winner for version control.</div>
-					</section>
-				</section> <!-- why? -->
+                <section>
+                    <h2>A bit of a background</h2>
+                    <br />
+                    <div>
+                        I said <strong>'a bit'</strong> ...
+                    </div>
+                    <br />
+                    <small>see <a href="http://en.wikipedia.org/wiki/Git_(software)">wikipedia</a></small>
+                </section>
 
-				<section>
-					<section><h2 class="">Some more benefits of git</h2></section>
-					<section>
-						<h3>Data redundancy and replication</h3>
-						<div class="subnotes">
-							Since there are multiple full repositories on multiple machines (instead of one central repository), the risk of project loss due to server failure or some other catastrophe is much lower.
-						</div>
-					</section>
-					<section>
-						<h3>High Availability</h3>
-						<div class="subnotes">
-							High availability -- Server down? Network down? No problem. Work in your repo (commit, view history, branch, etc) to your heart's content. Try that with Subversion!
-						</div>
-					</section>
-					<section>
-						<h3>One central .git directory</h3>
-						<div class="subnotes">
-							Only one .git directory per repository -- Versus a .svn in every subfolder, which, as you may know from painful personal experience, can lead to problems.
-						</div>
-						<small>This might not seem like a benefit but ask those that used other version control systems</small>
-					</section>
-					<section>
-						<h3>Superior disk utilization and network performance</h3>
-						<div class="subnotes">
-							Git efficiently compresses the objects in the .git directory, saving you space.
-						</div>
-					</section>
-					<section>
-						<h3>Collaboration Friendly</h3>
-						<div class="subnotes">
-							Git makes it easy to collaborate on projects with groups of contributors. And with great services like Github, Git's collaboration friendliness is even further magnified.
-						</div>
-					</section>
-				</section> <!-- why? -->
+                <section>
+                    <h2>What is Git?</h2>
+                    <div>
+                        Simply put, git is a source code management system.
+                    </div>
+                    <div class="subnotes">
+                        <strong>Source control / Version control</strong> is the management of changes to documents, computer programs  and other collections of information
+                    </div>
+                    <small>see <a href="http://en.wikipedia.org/wiki/Revision_control">wikipedia</a> article for more!</small>
+                </section>
 
-				<section>
-					<h2>Now the fun stuff!</h2>
-				</section> <!-- reference model -->
+                <section>
+                    <section>
+                        <h2>What Git is not!</h2>
+                        <div>
+                            <img class="no-border" src="./img/octocat2.png" alt="" />
+                        </div>
+                        <div><a href="http://github.com/">Github</a></div>
+                    </section>
+                    <section>
+                        <h2>Neither is it...</h2>
+                        <div>
+                            <img src="./img/bitbucket.png" alt="" />
+                        </div>
+                        <div><a href="http://bitbucket.org/">Bitbucket</a></div>
+                    </section>
+                </section>
+                <section>
+                    <section><h2 class="">Why should I care?</h2></section>
+                    <section>
+                        <div class="point">Git makes your life easier</div>
+                        <div id="name" class=" subnotes">
+                            Yes, it does!
+                        </div>
+                    </section>
+                    <section>
+                        <div id="point" class="point">
+                            Has this ever happened to you?
+                        </div>
+                        <div id="j" class="subnotes">
+                            <img src="./img/code-lost-tlk.png" alt=""/>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="point" class="point">
+                            Now you don't need to worry about it!
+                        </div>
+                        <div id="j" class="subnotes">
+                            <img src="./img/man-git2.png" alt=""/>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="subnotes">That in itself is a winner for version control.</div>
+                    </section>
+                </section> <!-- why? -->
 
-				<section>
-					<h3 style="position: absolute; top: -280px; left: 300px;">Installing Git</h3>
-					<section>
-						<h3>Windows</h3>
-						<div class="subnotes">
-							Installing Git on windows
-						</div>
-						<ul>
-							<li>Download the installer from <a href="http://msysgit.github.com/">http://msysgit.github.com/</a></li>
-							<li>Run the installer</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Mac</h3>
-						<div class="subnotes">
-							<a href="http://sourceforge.net/projects/git-osx-installer/">http://sourceforge.net/projects/git-osx-installer/</a>
-						</div>
-						<div class="subnotes">
-							Or via the MacPorts
-							<pre><code>sudo port install git-core +svn +doc +bash_completion +gitweb</code></pre>
-						</div>
-					</section>
-					<section>
-						<h3>Linux</h3>
-						<div class="subnotes">
-							Red Hat based systems (Fedora, CentOS)
-							<pre><code>yum install git-core</code></pre>
-						</div>
-						<div class="subnotes">
-							Debian based systems (Ubuntu)
-							<pre><code>sudo apt-get install git</code></pre>
-						</div>
-					</section>
-				</section> <!-- global infrastructure -->
-				<section>
-					<h3>Now that we have git installed, lets have some fun!</h3>
-				</section> <!-- global infrastructure -->
-				<section>
-					<h3>History</h3>
-					<div>
-						Git is really all about your history.
-					</div>
-					<div>
-						It creates a specialized filesystem to store your code history and when you tell it to, it records snapshots of your code repository.
-					</div>
-				</section> <!-- history -->
-				<section>
-					<div>Do note that git is a command line tool that has GUI frontends, though very convenient, does not show the full power of git. So once we understand the concepts, we'll move to a gui tool</div>
-				</section>
-				<section>
-					<h3 class="pos-static">Configuring Git</h3>
-					<section>
-							<pre><code>$ git config --global user.name "Tunji Bello Ebube"</code></pre>
-							<pre><code>$ git config --global user.email user@email.com</code></pre>
-					</section>
-					<section>
-						<div>Some other config values that may be interesting</div>
-						<pre><code>core.editor => your_editor_name_here</code></pre>
-						<pre><code>color.ui => true</code></pre>
-					</section>
-				</section> <!-- config -->
+                <section>
+                    <section><h2 class="">Some more benefits of git</h2></section>
+                    <section>
+                        <h3>Data redundancy and replication</h3>
+                        <div class="subnotes">
+                            Since there are multiple full repositories on multiple machines (instead of one central repository), the risk of project loss due to server failure or some other catastrophe is much lower.
+                        </div>
+                    </section>
+                    <section>
+                        <h3>High Availability</h3>
+                        <div class="subnotes">
+                            High availability -- Server down? Network down? No problem. Work in your repo (commit, view history, branch, etc) to your heart's content. Try that with Subversion!
+                        </div>
+                    </section>
+                    <section>
+                        <h3>One central .git directory</h3>
+                        <div class="subnotes">
+                            Only one .git directory per repository -- Versus a .svn in every subfolder, which, as you may know from painful personal experience, can lead to problems.
+                        </div>
+                        <small>This might not seem like a benefit but ask those that used other version control systems</small>
+                    </section>
+                    <section>
+                        <h3>Superior disk utilization and network performance</h3>
+                        <div class="subnotes">
+                            Git efficiently compresses the objects in the .git directory, saving you space.
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Collaboration Friendly</h3>
+                        <div class="subnotes">
+                            Git makes it easy to collaborate on projects with groups of contributors. And with great services like Github, Git's collaboration friendliness is even further magnified.
+                        </div>
+                    </section>
+                </section> <!-- why? -->
 
-				<section>
-					<h3>Initializing a Git repository</h3>
-					<div>Navigate into the folder you'd like git to start tracking and run</div>
-					<pre><code>$ git init</code></pre>
-				</section> <!-- Initializing a repo -->
+                <section>
+                    <h2>Now the fun stuff!</h2>
+                </section> <!-- reference model -->
 
-				<section data-background="#ffffff">
-					<h3 class="hack-take-up">Concepts to remember</h3>
-					<img style="border:0;" src="./img/three-stages.png">
-				</section> <!--  -->
-				<section data-background="">
-					<div class="statichd">
-						<h3 style="position: absolute; top: -300px;left: 110px;">A Few of my favourite things</h3>
-					</div>
-					<section>
-						<div><img src="./img/the-sound-of-music.jpg"></div>
-					</section>
-					<section>
-						<ul>
-							<li>Git branch</li>
-							<li>Git add</li>
-							<li>Git commit</li>
-							<li>Git diff</li>
-							<li>Git log</li>
-							<li>Git stash</li>
-						</ul>
-					</section>
-				</section> <!-- simple commands -->
+                <section>
+                    <h3 style="position: absolute; top: -280px; left: 300px;">Installing Git</h3>
+                    <section>
+                        <h3>Windows</h3>
+                        <div class="subnotes">
+                            Installing Git on windows
+                        </div>
+                        <ul>
+                            <li>Download the installer from <a href="http://msysgit.github.com/">http://msysgit.github.com/</a></li>
+                            <li>Run the installer</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Mac</h3>
+                        <div class="subnotes">
+                            <a href="http://sourceforge.net/projects/git-osx-installer/">http://sourceforge.net/projects/git-osx-installer/</a>
+                        </div>
+                        <div class="subnotes">
+                            Or via the MacPorts
+                            <pre><code>sudo port install git-core +svn +doc +bash_completion +gitweb</code></pre>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Linux</h3>
+                        <div class="subnotes">
+                            Red Hat based systems (Fedora, CentOS)
+                            <pre><code>yum install git-core</code></pre>
+                        </div>
+                        <div class="subnotes">
+                            Debian based systems (Ubuntu)
+                            <pre><code>sudo apt-get install git</code></pre>
+                        </div>
+                    </section>
+                </section> <!-- global infrastructure -->
+                <section>
+                    <h3>Now that we have git installed, lets have some fun!</h3>
+                </section> <!-- global infrastructure -->
+                <section>
+                    <h3>History</h3>
+                    <div>
+                        Git is really all about your history.
+                    </div>
+                    <div>
+                        It creates a specialized filesystem to store your code history and when you tell it to, it records snapshots of your code repository.
+                    </div>
+                </section> <!-- history -->
+                <section>
+                    <div>Do note that git is a command line tool that has GUI frontends, though very convenient, does not show the full power of git. So once we understand the concepts, we'll move to a gui tool</div>
+                </section>
+                <section>
+                    <h3 class="pos-static">Configuring Git</h3>
+                    <section>
+                        <pre><code>$ git config --global user.name "Tunji Bello Ebube"</code></pre>
+                        <pre><code>$ git config --global user.email user@email.com</code></pre>
+                    </section>
+                    <section>
+                        <div>Some other config values that may be interesting</div>
+                        <pre><code>core.editor => your_editor_name_here</code></pre>
+                        <pre><code>color.ui => true</code></pre>
+                    </section>
+                </section> <!-- config -->
 
-				<section data-background="#ffffff">
-					<div class="statichd">
-						<h3 style="position: absolute; top: -300px;left: 150px;">A closer look a branches</h3>
-					</div>
-					<section>
-						<div>A single commit in the repository has the following format</div>
-						<img style="border: 0;" src="./img/single-commit-data.png" alt=""/>
-						<small>Pointer to that root tree and all the commit metadata</small>
-					</section>
-					<section>
-						<div>Making some commits to the repository</div>
-						<img style="border: 0;" src="./img/many-commits-data.png" alt=""/>
-						<br />
-						<small>Many commit trees and their associated metadata</small>
-					</section>
-					<section>
-						<div>This is how the repository looks at the moment.</div>
-						<img style="border: 0;" src="./img/show-master-branch.png" alt=""/>
-						<br />
-						<small>Showing the master branch and its representation</small>
-					</section>
-					<section>
-						<div>When we branch by running <pre><code>$ git branch testing</code></pre></div>
-					</section>
-					<section>
-						<div>We now have our repo looking like...</div>
-						<img style="border: 0;" src="./img/multiple-branches.png" alt=""/>
-						<br />
-						<small>Multiple branches</small>
-					</section>
-					<section>
-						<div>HUH?...What is 'HEAD'</div>
-						<img style="border: 0;" src="./img/branches-with-head.png" alt=""/>
-						<br />
-						<small>Its just a pointer...</small>
-					</section>
-					<section>
-						<div>We checkout the new branch: <pre><code>$ git checkout testing</code></pre></div>
-					</section>
-					<section>
-						<div>...and voila!</div>
-						<img style="border: 0;" src="./img/head-at-testing.png" alt=""/>
-						<br />
-						<!-- <small>Multiple branches</small> -->
-					</section>
-					<section>
-						<div>Doing another commit</div>
-						<img style="border: 0;" src="./img/testing-ahead-master.png" alt=""/>
-						<br />
-						<small>Showing 'testing' ahead of 'master' by one commit!</small>
-					</section>
-					<section>
-						<div>Just a sneak peak!</div>
-					</section>
-				</section> <!-- advanced commands -->
-				<section data-background="">
-					<div class="statichd">
-						<h3 style="position: absolute; top: -300px;left: 110px;">Some more advanced commands</h3>
-					</div>
-					<section>
-						<ul>
-							<li>Git reset</li>
-							<li>Git rebase</li>
-							<li>Git cherry-pick</li>
-						</ul>
-					</section>
-				</section> <!-- advanced commands -->
-				
-				<section>
-					<h1>Thank you!</h1>
-				</section>
+                <section>
+                    <h3>Initializing a Git repository</h3>
+                    <div>Navigate into the folder you'd like git to start tracking and run</div>
+                    <pre><code>$ git init</code></pre>
+                </section> <!-- Initializing a repo -->
+
+                <section data-background="#ffffff">
+                    <h3 class="hack-take-up">Concepts to remember</h3>
+                    <img style="border:0;" src="./img/three-stages.png">
+                </section> <!--  -->
+                <section data-background="">
+                    <div class="statichd">
+                        <h3 style="position: absolute; top: -300px;left: 110px;">A Few of my favourite things</h3>
+                    </div>
+                    <section>
+                        <div><img src="./img/the-sound-of-music.jpg"></div>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Git branch</li>
+                            <li>Git add</li>
+                            <li>Git commit</li>
+                            <li>Git diff</li>
+                            <li>Git log</li>
+                            <li>Git stash</li>
+                        </ul>
+                    </section>
+                </section> <!-- simple commands -->
+
+                <section data-background="#ffffff">
+                    <div class="statichd">
+                        <h3 style="position: absolute; top: -300px;left: 150px;">A closer look a branches</h3>
+                    </div>
+                    <section>
+                        <div>A single commit in the repository has the following format</div>
+                        <img style="border: 0;" src="./img/single-commit-data.png" alt=""/>
+                        <small>Pointer to that root tree and all the commit metadata</small>
+                    </section>
+                    <section>
+                        <div>Making some commits to the repository</div>
+                        <img style="border: 0;" src="./img/many-commits-data.png" alt=""/>
+                        <br />
+                        <small>Many commit trees and their associated metadata</small>
+                    </section>
+                    <section>
+                        <div>This is how the repository looks at the moment.</div>
+                        <img style="border: 0;" src="./img/show-master-branch.png" alt=""/>
+                        <br />
+                        <small>Showing the master branch and its representation</small>
+                    </section>
+                    <section>
+                        <div>When we branch by running <pre><code>$ git branch testing</code></pre></div>
+                    </section>
+                    <section>
+                        <div>We now have our repo looking like...</div>
+                        <img style="border: 0;" src="./img/multiple-branches.png" alt=""/>
+                        <br />
+                        <small>Multiple branches</small>
+                    </section>
+                    <section>
+                        <div>HUH?...What is 'HEAD'</div>
+                        <img style="border: 0;" src="./img/branches-with-head.png" alt=""/>
+                        <br />
+                        <small>Its just a pointer...</small>
+                    </section>
+                    <section>
+                        <div>We checkout the new branch: <pre><code>$ git checkout testing</code></pre></div>
+                    </section>
+                    <section>
+                        <div>...and voila!</div>
+                        <img style="border: 0;" src="./img/head-at-testing.png" alt=""/>
+                        <br />
+                        <!-- <small>Multiple branches</small> -->
+                    </section>
+                    <section>
+                        <div>Doing another commit</div>
+                        <img style="border: 0;" src="./img/testing-ahead-master.png" alt=""/>
+                        <br />
+                        <small>Showing 'testing' ahead of 'master' by one commit!</small>
+                    </section>
+                    <section>
+                        <div>Just a sneak peak!</div>
+                    </section>
+                </section> <!-- advanced commands -->
+                <section data-background="">
+                    <div class="statichd">
+                        <h3 style="position: absolute; top: -300px;left: 110px;">Some more advanced commands</h3>
+                    </div>
+                    <section>
+                        <ul>
+                            <li>Git reset</li>
+                            <li>Git rebase</li>
+                            <li>Git cherry-pick</li>
+                        </ul>
+                    </section>
+                </section> <!-- advanced commands -->
+
+                <section>
+                    <h1>Thank you!</h1>
+                </section>
 
 
-			</div>
+            </div>
 
-		</div>
+        </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
 
-		<script>
+        <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+});
 
-		</script>
+        </script>
 
-	</body>
+    </body>
 </html>

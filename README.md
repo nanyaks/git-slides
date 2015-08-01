@@ -2,6 +2,9 @@
 
 This is the AWS slide for the GDG Cloud event held on the 14th December at the CCHUB in Lagos, Nigeria.
 
+## Trainer
+`[Nanyak](https://github.com/nanyaks)`
+
 ## Setup
 To set this up on your system, just run:
 

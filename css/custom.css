@@ -21,4 +21,27 @@ img.border {
     border: 1px solid #ccc;
 }
 
+pre.bordered {
+    border: none;
+    box-shadow: none !important;
+    font-weight: 700;
+    padding: 20px;
+}
+
+dl dt.emphasize {
+    text-align: left;
+    font-weight: 400;
+    color: #999;
+}
+
+dl dd {
+    font-weight: 100;
+    font-size: 0.9em;
+    color: #d0d0d0;
+}
+
+.central-txt {
+    text-align: right;
+}
+
 .pos-static {position: absolute; top: -280px; left: 280px;}

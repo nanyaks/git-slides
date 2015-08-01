@@ -11,7 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="css/reveal.min.css">
-
         <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
         <!-- For syntax highlighting -->
@@ -318,16 +317,67 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 </section> <!-- advanced commands -->
                 <section data-background="">
                     <div class="statichd">
-                        <h3 style="position: absolute; top: -300px;left: 110px;">Some more advanced commands</h3>
+                        <h3 style="position: absolute; top: -300px;left: 110px;">Some advanced concepts</h3>
                     </div>
                     <section>
                         <ul>
+                            <li>Git objects</li>
+                            <li>Git log Options</li>
                             <li>Git reset</li>
                             <li>Git rebase</li>
                             <li>Git cherry-pick</li>
                         </ul>
                     </section>
                 </section> <!-- advanced commands -->
+
+                <section>
+                    <h1 id="git_objects">Git Objects</h1>
+                    <p>Git objects are entirely composed of:</p>
+                    <div class="name">
+                        <ul>
+                            <li>Blobs</li>
+                            <li>Trees</li>
+                            <li>Commits</li>
+                            <li>Tags</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>The Git refspec</h2>
+                        <p>
+                        A refspec maps a branch in the local repository to a branch in a remote repository. This makes it possible to manage remote branches using local Git commands and to configure some advanced git push and git fetch behavior.
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Formal spec</h1>
+                        <h3><pre class="central-txt bordered"><span>[+]src:dst</span></pre></h3>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt class="emphasize">src</dt>
+                            <dd><p>The pattern for references on the remote side</p></dd>
+
+                            <dt class="emphasize">dst</dt>
+                            <dd><p>Where the references will be written to locally</p></dd>
+                        </dl>
+                    </section>
+                </section>
+
+                <section>
+                    <h1 id="git_log">Git Log</h1>
+                    <div class="name">
+                        Some interesting options:
+                    </div>
+                        <ul>
+                            <li>--grep</li>
+                            <li>--author</li>
+                            <li>--since, --after, --until, --before</li>
+                            <li>--merges (--min-parents=2)</li>
+                            <li>--pretty=full</li>
+                        </ul>
+                </section>
 
                 <section>
                     <h1>Thank you!</h1>
